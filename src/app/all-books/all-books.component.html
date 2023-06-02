@@ -1,0 +1,40 @@
+<div class="container p-3 mt-4">
+    <h1 class="bg-dark text-white text-center">Avaliable Books in Library</h1>
+    <div class="d-flex">
+        <div class="col-lg-6">
+            
+            <input [(ngModel)]="searchKey" type="text" class="form-control" style="margin-left: 40%;" placeholder="Search books here">
+            <button routerLink="/dashboard" class="btn btn-success mt-3" style="margin-left: 70%;">Go Back to Dashboard</button>
+    
+    </div> 
+    </div>
+ 
+   <!-- card design -->
+<div class="container mt-5">
+    <div class="row">
+    <div class="col-md-6 mb-3" *ngFor="let books of table | search:searchKey:'booktitle';"> 
+    <div class="card">
+    <div class="card-body">
+        <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+        <!-- image -->
+        <img class="Contact_image" [src]="books.image" alt="contact image">
+        </div>
+        <div class="col-md-7">
+            <!-- contact details -->
+            <ul class="list-group">
+                <li class="list-group-item">Title: <span class="fw-bolder">{{books.booktitle}}</span></li>
+                <li class="list-group-item">Author: <span class="fw-bolder">{{books.author}}</span></li>
+                <li class="list-group-item">Publisher: <span class="fw-bolder">{{books.publisher}}</span></li>
+            </ul>
+            <button (click)="itemBook(books)" style="margin-left: 35%; margin-bottom: -15px;" class="btn btn-success rounded-pill mt-2">Issued</button> 
+        </div>
+    </div>
+    </div >
+    </div>
+    </div>
+            <div class="col-md-6"></div>
+        </div>
+    </div>
+
+</div>

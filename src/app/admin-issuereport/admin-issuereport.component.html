@@ -1,0 +1,27 @@
+<div class="container p-3 mt-4">
+    <h2 class="text-center bg-info text-white">Request form User for Recommending a book</h2>
+    <div class="row">
+        <!-- table -->
+        <table class="table border text-center mt-5">
+            <thead>
+                <tr>
+                    <th>BookName</th>
+                    <th>Author</th>
+                    <th>Publisher</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let items of itemBook">
+                    <th>{{items.booktitle}}</th>
+                    <th>{{items.author}}</th>
+                    <th>{{items.publisher}}</th>
+                    <th><button class="btn btn-success me-2">Accept</button><button class="btn btn-danger">Ignore</button> </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button routerLink="/adminhmpage" class="btn btn-success rounded-pill" style="margin-left: 40%;">Go Back</button>
+
+    
+</div >

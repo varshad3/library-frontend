@@ -1,0 +1,47 @@
+ 
+<div class="row">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+      <h1 class="text-center mt-5" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Recommentaion of a Book</b></h1>  
+<form [formGroup]="requestbookuser" style="margin-top:15%;" (ngSubmit)="requestbooks()">
+    <!-- booktitle input -->
+    <div class="form-outline mb-4">
+      <input name="booktitle" formControlName="booktitle"  type="text" id="form2Example1" class="form-control" required/>
+      <label class="form-label" for="form2Example1">Title</label>
+    </div>
+    <!-- booktitle error msg -->
+    <div *ngIf="this.requestbookuser.get('booktitle')?.errors&&this.requestbookuser.get('booktitle')?.touched"
+    class="text-danger mb-3">Check the Title</div>
+  
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <input name="author" formControlName="author"  type="text" id="form2Example1" class="form-control" required/>
+      <label class="form-label" for="form2Example1">Author</label>
+    </div>
+    <!-- author error msg -->
+    <div *ngIf="this.requestbookuser.get('author')?.errors&&this.requestbookuser.get('author')?.touched"
+    class="text-danger mb-3">Check the author</div>
+
+    <!-- publisher -->
+    <div class="form-outline mb-4">
+      <input name="publisher" formControlName="publisher"  type="text" id="form2Example1" class="form-control" required/>
+      <label class="form-label" for="form2Example1">Publisher</label>
+    </div>
+    <!-- publisher error msg -->
+    <div *ngIf="this.requestbookuser.get('publisher')?.errors&&this.requestbookuser.get('publisher')?.touched"
+    class="text-danger mb-3">Check the publisher</div>
+  
+    <!-- Submit button -->
+   <div class="d-flex">
+        <input type="submit" class="btn btn-primary btn-block mb-4 rounded-pill" value="Sent Request" style="margin-left: 25%;">
+        <button routerLink="/dashboard" class="btn btn-success btn-sm rounded-pill" style="height: 40px; margin-left: 12%;" >Go Back</button>
+    
+   </div>
+    <!-- Register buttons -->
+    
+  </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>

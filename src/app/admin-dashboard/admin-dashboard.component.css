@@ -1,0 +1,21 @@
+.heading{
+    position: absolute;
+    margin-left: 20rem;
+    margin-top: -24rem;
+    justify-content: center;
+}
+
+.content{
+    position: absolute;
+    margin-left: 13rem;
+}
+
+.heading p{
+    margin-top: 3%;
+    width: 48rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-top: 1rem;
+    max-width: 700px;
+    height: 80px;
+}

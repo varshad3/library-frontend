@@ -1,0 +1,84 @@
+ 
+<div class="row">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+      <h1 class="text-center mt-5" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Adding Books To Library</b></h1>  
+<form [formGroup]="addbooksadmin" style="margin-top:15%;" (ngSubmit)="addbooks()">
+    <!-- title input -->
+    <div class="form-outline mb-4">
+      <input name="booktitle" formControlName="booktitle" type="text" id="form2Example1" class="form-control" required/>
+      <label class="form-label" for="form2Example1">Book Title</label>
+    </div>
+
+    <!-- booktitle error msg -->
+    <div *ngIf="this.addbooksadmin.get('booktitle')?.errors&&this.addbooksadmin.get('booktitle')?.touched"
+    class="text-danger mb-3">Check the Title</div>
+  
+
+    <!-- image -->
+    <div class="form-outline mb-4">
+      <input name="image" formControlName="image" type="text" id="form2Example1" class="form-control" required/>
+      <label class="form-label" for="form2Example1">Image</label>
+    </div>
+    <!-- image error msg -->
+    <div *ngIf="this.addbooksadmin.get('image')?.errors&&this.addbooksadmin.get('image')?.touched"
+    class="text-danger mb-3">Check the Url</div>
+  
+    <!-- author input -->
+    <div class="form-outline mb-4">
+      <input name="author" formControlName="author" type="text" id="form2Example1" class="form-control" required/>
+      <label class="form-label" for="form2Example1">Author name</label>
+    </div>
+    <!-- author error msg -->
+    <div *ngIf="this.addbooksadmin.get('author')?.errors&&this.addbooksadmin.get('author')?.touched"
+    class="text-danger mb-3">Check the author</div>
+
+    <!-- publisher -->
+    <div class="form-outline mb-4">
+      <input name="publisher" formControlName="publisher" type="email" id="form2Example1" class="form-control" required/>
+      <label class="form-label" for="form2Example1">Publisher</label>
+    </div>
+    <!-- publisher error msg -->
+    <div *ngIf="this.addbooksadmin.get('publisher')?.errors&&this.addbooksadmin.get('publisher')?.touched"
+    class="text-danger mb-3">Check the publisher</div>
+  
+
+    <!-- quantity -->
+    <div class="form-outline mb-4">
+      <input name="countbooks" formControlName="countbooks" type="number" id="form2Example1" class="form-control" required/>
+      <label class="form-label" for="form2Example1">No:of Books</label>
+    </div>
+    <!-- countbooks error msg -->
+    <div *ngIf="this.addbooksadmin.get('countbooks')?.errors&&this.addbooksadmin.get('countbooks')?.touched"
+    class="text-danger mb-3">Check the Quantity</div>
+  
+    <!-- publishing date -->
+    <div class="form-outline mb-4">
+        <input name="pubdate" formControlName="pubdate" type="date" id="form2Example1" class="form-control" required/>
+        <label class="form-label" for="form2Example1">Publishing Date</label>
+      </div>
+      <!-- pubdate error msg -->
+    <div *ngIf="this.addbooksadmin.get('pubdate')?.errors&&this.addbooksadmin.get('pubdate')?.touched"
+    class="text-danger mb-3">Check the Date</div>
+
+      <!-- registerErrorMsg  -->
+
+  <div class="mt-2 mb-2 text-danger fw-bolder">
+    {{addbookErrorMsg}}
+  </div>
+
+  
+    <!-- Submit button -->
+   <div class="d-flex">
+        <button type="submit" class="btn btn-success  mb-4" style="margin-left: 25%;">Add Book</button>
+        <button routerLink="/adminhmpage" class="btn btn-warning btn-sm " style="height: 40px; margin-left: 6%;" >Close</button>
+    
+   </div>
+    <!-- Register buttons -->
+    
+  </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>

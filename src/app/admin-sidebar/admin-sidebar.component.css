@@ -1,0 +1,38 @@
+.profile{
+    text-align: center;
+}
+
+.profile img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.profile h3{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+mat-list{
+    font-size: medium;
+    padding: 10px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+}
+
+.pages a{
+    text-decoration: none;
+color: black;
+height: 40px;
+padding: 10px 0 0 10px;
+}
+
+.pages a:hover{
+    background-color: antiquewhite;
+    color: rgba(86, 27, 27, 0.636);
+}

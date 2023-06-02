@@ -1,0 +1,42 @@
+<!-- navbar -->
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid btn ms-5">
+      <a class="navbar-brand "><i class="fa-solid fa-book me-3 "></i><i style="font-family: 'Pacifico', cursive;">Library Management System</i></a>
+      <form class="d-flex me-5" role="search">  
+           <!--login button -->
+        <button class="btn btn-outline-success"  type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"routerLink="adminhmview"><i class="fa-sharp fa-solid fa-right-to-bracket me-2"></i>Login</button>
+        <!-- register button -->
+        <button class="btn btn-outline-danger ms-4"  type="button" routerLink="register"><i class="fa-sharp fa-solid fa-right-to-bracket me-2"></i>Register</button>
+      </form>
+    </div>
+  </nav>
+
+ 
+
+
+  
+  <!--definition -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- image -->
+      <div class="col-md-5 mt-5">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.rHQxfwRz8u8LMidquzBNXAHaHa&pid=Api&P=0" alt="lib image">
+      </div>
+  <!-- definition -->
+  <div class="col-md-7">
+    <h3 style="margin-top: 140px; font-weight: 600; font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-style: italic;">Library Management System</h3>
+    <label class="justify-content-center" style="margin-top: 30px; "> A library is  a  place where  a huge  collection of books and  resources are  available which can be accessible by the users. It acts as a brain for the institutions. It enhances the  dissemination  of knowledge and  spiritual  civilization  among the  students. The tons  of  books  and  research  works  are  captivating  the  students  to  improvise  their knowledge  in  all  perspectives.  It  guides  the  students  to  promote  their  views differently.  This  knowledge  optimizes  the  student  to  achieve  a  better  result  in academic as well as personal skill development. Improvisation in technology causes the demand for developing a way to enhance the traditional library set up to digital one. Numerous tedious processes reduce the efficiency of the library.  </label>
+    <div style="text-align: justify;" class="collapse" id="collapseExample">
+      <br>For example, it always needs manual support to do any activities in the traditional library. The count and details of books are scribbled in the paper for reference. Each data is fetched in the notebook  for future  citations. To examine any data  then they have to refer  the notebooks.
+      At the same time while distributing the books to the students they have to enter into the  notebook where they need to represent  the book id, distribution and renewal date, and student id. The librarians/staff have to assign a tag for each book and provide an id for it. They have to align and arrange the books on the shelves and marked it. Missing or  theft of  the book builds a serious issue and confusion to  the librarians.  While  collecting  the  book  from  the  students  they  have  to  verify  the penalties  of  the  books.  Therefore  it  causes  a  monotonous  among  the  staff. Consequently, it builds an uninteresting among the student due to the slow progress of the staff. To evoke the library into the technological era, we presented a system called LSM.
+     </div>
+     <button (click)="collapse()" data-bs-toggle="collapse" data-bs-target="#collapseExample" class="btn btn-dark mt-3">Read 
+      <span *ngIf="isCollapse">More</span>
+      <span *ngIf="!isCollapse">Less</span>
+  </button>
+  </div>
+    </div>
+  
+  </div>
+
+  
