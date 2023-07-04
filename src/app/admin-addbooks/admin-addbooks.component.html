@@ -9,7 +9,7 @@
     <!-- title input -->
     <div class="form-outline mb-4">
       <input name="booktitle" formControlName="booktitle" type="text" id="form2Example1" class="form-control" required/>
-      <label class="form-label" for="form2Example1">Book Title</label>
+      <label class="form-label fw-bolder" for="form2Example1">Book Title</label>
     </div>
 
     <!-- booktitle error msg -->
@@ -20,7 +20,7 @@
     <!-- image -->
     <div class="form-outline mb-4">
       <input name="image" formControlName="image" type="text" id="form2Example1" class="form-control" required/>
-      <label class="form-label" for="form2Example1">Image</label>
+      <label class="form-label fw-bolder" for="form2Example1">Image</label>
     </div>
     <!-- image error msg -->
     <div *ngIf="this.addbooksadmin.get('image')?.errors&&this.addbooksadmin.get('image')?.touched"
@@ -29,7 +29,7 @@
     <!-- author input -->
     <div class="form-outline mb-4">
       <input name="author" formControlName="author" type="text" id="form2Example1" class="form-control" required/>
-      <label class="form-label" for="form2Example1">Author name</label>
+      <label class="form-label fw-bolder" for="form2Example1">Author name</label>
     </div>
     <!-- author error msg -->
     <div *ngIf="this.addbooksadmin.get('author')?.errors&&this.addbooksadmin.get('author')?.touched"
@@ -38,7 +38,7 @@
     <!-- publisher -->
     <div class="form-outline mb-4">
       <input name="publisher" formControlName="publisher" type="email" id="form2Example1" class="form-control" required/>
-      <label class="form-label" for="form2Example1">Publisher</label>
+      <label class="form-label fw-bolder" for="form2Example1">Publisher</label>
     </div>
     <!-- publisher error msg -->
     <div *ngIf="this.addbooksadmin.get('publisher')?.errors&&this.addbooksadmin.get('publisher')?.touched"
@@ -48,7 +48,7 @@
     <!-- quantity -->
     <div class="form-outline mb-4">
       <input name="countbooks" formControlName="countbooks" type="number" id="form2Example1" class="form-control" required/>
-      <label class="form-label" for="form2Example1">No:of Books</label>
+      <label class="form-label fw-bolder" for="form2Example1">No:of Books</label>
     </div>
     <!-- countbooks error msg -->
     <div *ngIf="this.addbooksadmin.get('countbooks')?.errors&&this.addbooksadmin.get('countbooks')?.touched"
@@ -57,7 +57,7 @@
     <!-- publishing date -->
     <div class="form-outline mb-4">
         <input name="pubdate" formControlName="pubdate" type="date" id="form2Example1" class="form-control" required/>
-        <label class="form-label" for="form2Example1">Publishing Date</label>
+        <label class="form-label fw-bolder" for="form2Example1">Publishing Date</label>
       </div>
       <!-- pubdate error msg -->
     <div *ngIf="this.addbooksadmin.get('pubdate')?.errors&&this.addbooksadmin.get('pubdate')?.touched"

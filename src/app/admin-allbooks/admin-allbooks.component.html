@@ -8,7 +8,7 @@
 <div *ngIf="!bookstatusmsg" class="row">
       <!-- table -->
       <table class="table border text-center mt-5">
-          <thead>
+          <thead style="background-color: rgb(35, 199, 221);">
               <tr>
                   <th>Sl No</th>
                   <th>Title</th>
@@ -19,7 +19,7 @@
                   <th>Action</th>
               </tr>
           </thead>
-          <tbody>
+          <tbody style="background-color: rgb(169, 189, 182);">
               <tr *ngFor="let books of table  | search:searchKey:'booktitle'; let i=index">
                   <th>{{i+1}}</th>
                   <th>{{books.booktitle}}</th>

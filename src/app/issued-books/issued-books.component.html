@@ -1,21 +1,19 @@
 <div class="container p-3 mt-4">
-    <h2 class="text-center">My Issued Books</h2>
+    <h2 style="background-color: blanchedalmond;" class="text-center"><b>History Of Isuued Books</b></h2>
     <div class="row">
         <!-- table -->
         <table class="table border text-center mt-5">
-          <thead>
+          <thead style="background-color: rgb(20, 77, 20); color: white;">
               <tr>
                   <th>Book Name</th>
                   <th>Author</th>
                   <th>Publisher</th>
-                  <th>Action</th>              </tr>
           </thead>
           <tbody>
-              <tr>
-                  <th>1</th>
-                  <th>2</th>
-                  <th>3</th>
-                  <th><button class="btn btn-success">Clear</button></th>
+              <tr *ngFor="let items of itemBook">
+                <th>{{items.booktitle}}</th>
+                <th>{{items.author}}</th>
+                <th>{{items.publisher}}</th>
               </tr>
 
 

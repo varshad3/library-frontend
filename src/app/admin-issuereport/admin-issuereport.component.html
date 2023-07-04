@@ -1,9 +1,9 @@
 <div class="container p-3 mt-4">
-    <h2 class="text-center bg-info text-white">Request form User for Recommending a book</h2>
+    <h2 class="text-center bg-info text-white">Recommended book Request by the User</h2>
     <div class="row">
         <!-- table -->
         <table class="table border text-center mt-5">
-            <thead>
+            <thead style="background-color: rgb(108, 196, 196);">
                 <tr>
                     <th>BookName</th>
                     <th>Author</th>
@@ -11,7 +11,7 @@
                     <th>Action</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody style="background-color: rgb(14, 14, 8); color: white;">
                 <tr *ngFor="let items of itemBook">
                     <th>{{items.booktitle}}</th>
                     <th>{{items.author}}</th>
@@ -24,4 +24,4 @@
     <button routerLink="/adminhmpage" class="btn btn-success rounded-pill" style="margin-left: 40%;">Go Back</button>
 
     
-</div >
+</div>

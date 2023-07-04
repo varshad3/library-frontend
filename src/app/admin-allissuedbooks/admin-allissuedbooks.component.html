@@ -1,10 +1,10 @@
 <div class="container p-3 mt-4">
-    <h1 class="bg-dark text-white text-center">User View Page</h1>
+    <h1 class="bg-dark text-white text-center">Books Issued by User</h1>
     <div class="col-lg-6">
     
 </div> 
 <table class="table border text-center mt-5">
-  <thead>
+  <thead style="background-color: rgb(46, 135, 167);">
       <tr>
           <th>Sl No</th>
           <th>Title</th>
@@ -12,7 +12,7 @@
           <th>Publish Date</th>
       </tr>
   </thead>
-  <tbody>
+  <tbody style="background-color: rgb(106, 164, 168);">
       <tr *ngFor="let items of itemBook let i=index">
           <th>{{i+1}}</th>
           <th>{{items.booktitle}}</th>
